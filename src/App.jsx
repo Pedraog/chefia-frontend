@@ -3,7 +3,7 @@ import { Plus, MessageSquare, ChefHat, Send, Sparkles, LogOut, Lock, Mail, KeyRo
 import { GoogleGenerativeAI } from '@google/generative-ai';
 import Markdown from 'react-markdown';
 
-const MINHA_API_KEY = "AIzaSyDRcJxPGmrhOtct34vqTSG8d-49er9dRWQ"; 
+const MINHA_API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
 
 function App() {
   const [usuarioLogado, setUsuarioLogado] = useState(null); 
